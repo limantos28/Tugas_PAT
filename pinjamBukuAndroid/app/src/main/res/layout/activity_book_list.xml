@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookLIstActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="406dp"
+        android:layout_height="549dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="168dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="560dp">
+
+            <TextView
+                android:id="@+id/textViewTahun"
+                android:layout_width="108dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Tahun"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewJudul" />
+
+            <Button
+                android:id="@+id/btnPinjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="356dp"
+                android:text="Pinjam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.78"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTahun" />
+
+            <TextView
+                android:id="@+id/textViewJudul"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="Judul"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewAuthor"
+                android:layout_width="103dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="52dp"
+                android:text="Author"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTahun" />
+
+            <TextView
+                android:id="@+id/textViewPenerbit"
+                android:layout_width="107dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:text="Penerbit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="121dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Jumlah Halaman"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPenerbit" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="164dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewJudul"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTahun"
+                android:layout_width="148dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewTahun"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+            <TextView
+                android:id="@+id/txtAuthor"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewAuthor"
+                app:layout_constraintTop_toBottomOf="@+id/txtTahun" />
+
+            <TextView
+                android:id="@+id/txtPenerbit"
+                android:layout_width="147dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewPenerbit"
+                app:layout_constraintTop_toBottomOf="@+id/txtAuthor" />
+
+            <TextView
+                android:id="@+id/txtHalaman"
+                android:layout_width="144dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/txtPenerbit" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="165dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/txtHalaman" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
